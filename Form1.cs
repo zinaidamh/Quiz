@@ -26,7 +26,7 @@ namespace Quiz
 
     public partial class Form1 : Form
     {
-       
+               
         Font defaultFont = new Font(new FontFamily("Arial"), 24, FontStyle.Bold, GraphicsUnit.Pixel);
         Color defaultColor = Color.Red;
         int defaultSize = 5;
