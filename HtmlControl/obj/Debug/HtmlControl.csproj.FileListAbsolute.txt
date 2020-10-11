@@ -1,7 +1,0 @@
-C:\Users\User\source\repos\HtmlControl\bin\Debug\HtmlControl.dll
-C:\Users\User\source\repos\HtmlControl\bin\Debug\HtmlControl.pdb
-C:\Users\User\source\repos\HtmlControl\obj\Debug\HtmlControl.csproj.CoreCompileInputs.cache
-C:\Users\User\source\repos\HtmlControl\obj\Debug\HtmlControl.dll
-C:\Users\User\source\repos\HtmlControl\obj\Debug\HtmlControl.pdb
-C:\Users\User\source\repos\HtmlControl\obj\Debug\HtmlControl.HtmlControl.resources
-C:\Users\User\source\repos\HtmlControl\obj\Debug\HtmlControl.csproj.GenerateResource.cache

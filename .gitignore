@@ -4,3 +4,7 @@
 #Ignore all pdf file
 *.pdf
 
+*/**/bin/Debug
+*/**/bin/Release
+*/**/obj/Debug
+*/**/obj/Release
