@@ -437,6 +437,9 @@ namespace Quiz
         private void SaveImport(Dictionary<int, Question> data, string fileName)
         {
             var QuestionHelper = new QuestionRepository(liteDBPath);
+            int maxNum= data.Keys.Max();
+            int minNum = data.Keys.Min();
+
             string msg = "";
 
            // QuestionHelper.DeleteAll();
@@ -466,7 +469,8 @@ namespace Quiz
             }
 
 
-
+            this.txtFrom.Text = minNum.ToString();
+            this.txtTo.Text = maxNum.ToString();
             FilterGridView();
             //RefreshGridView(QuestionHelper.Get(0,0,chkActiveOnly.Checked));
             // Clear();
@@ -511,19 +515,28 @@ namespace Quiz
 
             }
            
-            if (Directory.Exists(folderName))
-            {
-                MessageBox.Show("Export to Pdf finished OK");
+            //if (Directory.Exists(folderName))
+            //{
+            //    MessageBox.Show("Export to Pdf finished OK");
                 
-            }
+            //}
           }
 
 
         protected string ReadFileToString()
         {
             string path = app_directory+@"HtmlTemplate/templateNew.html";
-            string readText = File.ReadAllText(path);
-            return readText;
+            string Src=  app_directory+ @"HtmlTemplate/image1.png";
+            try
+            {
+                string readText = File.ReadAllText(path);
+                return readText.Replace("{src}", Src);
+            }
+            catch
+            {
+                return "";
+            }
+
         }
 
 
@@ -540,9 +553,11 @@ namespace Quiz
                 return;
             }
 
+          
+
             TxtHtmlCode = TxtHtmlCode.Replace("{answer}", Answer);
             TxtHtmlCode = TxtHtmlCode.Replace("{number}", item.QuestionNumber.ToString());
-          
+         
 
             string htmlString = TxtHtmlCode;
            
@@ -606,7 +621,8 @@ namespace Quiz
             this.progressBar1.Visible = true;
             FilterGridView();
             backgroundWorker1.RunWorkerAsync();
-           
+            
+
         }
 
        
@@ -628,6 +644,18 @@ namespace Quiz
         private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             this.progressBar1.Visible = false;
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            openFileDialog.InitialDirectory = app_directory + "Pdf";
+            openFileDialog.Title = "Open Pdf File";
+            openFileDialog.Filter = "Pdf files|*.pdf";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string file = openFileDialog.FileName;
+                
+
+            }
         }
 
         #endregion
@@ -752,6 +780,24 @@ namespace Quiz
         }
         #endregion
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            string liteDBPath = app_directory + ConfigurationManager.AppSettings["DbPath"].ToString();
+            try
+            {
+                System.IO.File.Copy(liteDBPath, liteDBPath + DateTime.Now.ToString());
+            }
+            catch
+            {
+
+            }
+
+        }
     }
 
 }

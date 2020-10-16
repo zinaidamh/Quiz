@@ -64,7 +64,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(964, 103);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(671, 578);
+            this.dataGridView1.Size = new System.Drawing.Size(653, 457);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
             // 
@@ -73,7 +73,7 @@
             this.btnLoad.AllowDrop = true;
             this.btnLoad.CausesValidation = false;
             this.btnLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoad.Location = new System.Drawing.Point(974, 712);
+            this.btnLoad.Location = new System.Drawing.Point(964, 596);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(137, 27);
             this.btnLoad.TabIndex = 1;
@@ -87,7 +87,7 @@
             this.btnPdfMulti.AllowDrop = true;
             this.btnPdfMulti.CausesValidation = false;
             this.btnPdfMulti.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPdfMulti.Location = new System.Drawing.Point(1170, 712);
+            this.btnPdfMulti.Location = new System.Drawing.Point(1162, 596);
             this.btnPdfMulti.Name = "btnPdfMulti";
             this.btnPdfMulti.Size = new System.Drawing.Size(137, 27);
             this.btnPdfMulti.TabIndex = 2;
@@ -155,7 +155,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(1368, 701);
+            this.progressBar1.Location = new System.Drawing.Point(1350, 586);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(267, 68);
             this.progressBar1.TabIndex = 39;
@@ -195,7 +195,7 @@
             this.txtQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuestion.Location = new System.Drawing.Point(200, 86);
             this.txtQuestion.Name = "txtQuestion";
-            this.txtQuestion.Size = new System.Drawing.Size(650, 198);
+            this.txtQuestion.Size = new System.Drawing.Size(650, 143);
             this.txtQuestion.TabIndex = 43;
             this.txtQuestion.Text = "";
             // 
@@ -203,7 +203,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(37, 386);
+            this.label5.Location = new System.Drawing.Point(41, 325);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 23);
             this.label5.TabIndex = 44;
@@ -227,8 +227,9 @@
             this.panel1.Controls.Add(this.txtQuestion);
             this.panel1.Location = new System.Drawing.Point(32, 23);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(907, 746);
+            this.panel1.Size = new System.Drawing.Size(907, 674);
             this.panel1.TabIndex = 46;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lblProblem
             // 
@@ -255,7 +256,7 @@
             this.btnClear.AllowDrop = true;
             this.btnClear.CausesValidation = false;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(200, 687);
+            this.btnClear.Location = new System.Drawing.Point(208, 571);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(137, 27);
             this.btnClear.TabIndex = 51;
@@ -269,7 +270,7 @@
             this.btnSavePdf.AllowDrop = true;
             this.btnSavePdf.CausesValidation = false;
             this.btnSavePdf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSavePdf.Location = new System.Drawing.Point(436, 687);
+            this.btnSavePdf.Location = new System.Drawing.Point(444, 571);
             this.btnSavePdf.Name = "btnSavePdf";
             this.btnSavePdf.Size = new System.Drawing.Size(137, 27);
             this.btnSavePdf.TabIndex = 50;
@@ -280,7 +281,7 @@
             // 
             // pnlEditor
             // 
-            this.pnlEditor.Location = new System.Drawing.Point(200, 323);
+            this.pnlEditor.Location = new System.Drawing.Point(204, 262);
             this.pnlEditor.Name = "pnlEditor";
             this.pnlEditor.Size = new System.Drawing.Size(650, 189);
             this.pnlEditor.TabIndex = 49;
@@ -290,7 +291,7 @@
             this.btnSave.AllowDrop = true;
             this.btnSave.CausesValidation = false;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(713, 687);
+            this.btnSave.Location = new System.Drawing.Point(721, 571);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(137, 27);
             this.btnSave.TabIndex = 48;
@@ -302,9 +303,9 @@
             // txtParticipants
             // 
             this.txtParticipants.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtParticipants.Location = new System.Drawing.Point(200, 564);
+            this.txtParticipants.Location = new System.Drawing.Point(204, 483);
             this.txtParticipants.Name = "txtParticipants";
-            this.txtParticipants.Size = new System.Drawing.Size(650, 92);
+            this.txtParticipants.Size = new System.Drawing.Size(650, 52);
             this.txtParticipants.TabIndex = 47;
             this.txtParticipants.Text = "";
             // 
@@ -312,7 +313,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(35, 566);
+            this.label6.Location = new System.Drawing.Point(39, 505);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(130, 23);
             this.label6.TabIndex = 46;
@@ -334,7 +335,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FloralWhite;
-            this.ClientSize = new System.Drawing.Size(1666, 784);
+            this.ClientSize = new System.Drawing.Size(1666, 718);
             this.Controls.Add(this.chkActiveOnly);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.txtTo);
@@ -348,6 +349,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
