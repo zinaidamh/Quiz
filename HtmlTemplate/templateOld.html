@@ -1,0 +1,145 @@
+﻿<html>
+   <head>
+      <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+      <meta charset="UTF-8">
+      <style>
+         body
+         {
+         font-family:"Arial";
+         vertical-align:baseline;
+         font-size:18px;
+         font-style:normal;
+         color:#000000;
+         font-weight:700;
+         text-decoration:none;
+         }
+         .container
+         {
+         position: absolute;
+         top: 0; left: 0; bottom: 0; right: 0;
+         margin-top: 150px;
+         }
+         .data
+         {
+         margin: auto;
+         }
+         .image-header
+         {
+         color:#5b0f00;
+         font-weight:700;
+         text-decoration:none;
+         font-size:27px;
+         font-style:normal;
+         display:block;
+         margin-bottom:2px;
+         }
+         .image-box
+         {
+         overflow: hidden; 
+         display: inline-block; 
+         margin: 0; 
+         }
+         .image1
+         {
+         width:  285px; 
+         height: 285px; 
+         margin-left:0;
+         margin-top:0; 
+         }
+         .c_label
+         {
+         text-decoration:underline;
+         }
+         .link 
+         {
+         display:block;
+         margin-top:8px;
+         }
+         a, a:link, a:visited {
+         color: #1155cc;
+         text-decoration: underline;
+         font-style: italic;
+         font-size:19px;
+         }
+         .div_answer {
+         font-size: 24px;
+         color: red;
+         text-wrap: normal;
+         width: 520px;
+         height: 100%;
+         overflow-wrap: normal;
+         display: block;
+         margin: auto;
+         vertical-align:middle;
+          padding-top:20px;
+         }
+         .p_answer
+         {
+         padding-top:45px;
+         font-size:23px;
+         }
+         .p_number
+         {
+         margin-bottom: 10px;
+         }
+         .p_label
+         {
+        margin-bottom: 10px;
+		margin-top:1px;
+         }
+        div
+         {
+         margin:0;
+         font-size:20px;
+         display:block;
+         text-align:center;
+         }
+        ul ,ol { 
+	      display: inline-block; 
+	      text-align: left; 
+        list-style-type: none;
+        
+	}
+          .p_ul  { 
+	      display: inline-block; 
+	      text-align: left; 
+          margin: 0;
+         
+        width:85%;
+	}
+
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="data">
+            <p class="p_header">
+               <span class="image-header">Home Schooling</span>
+               <!--padding:71.2pt 222pt 420.8pt 221.2pt;-->
+               <span class="image-box">
+               <img alt="" src="{src}" class="image1" title="">
+               </span>
+               <br/>
+               <span class="link"><a href="https://www.patreon.com/user?u=38344195">к заданиям</a></span>
+            </p>
+            <p class="p_number">
+               <span>
+               ({number})
+               </span>
+            </p>
+            <p class="p_label">
+               <span class="c_label">
+               Правильный ответ 
+               </span>
+            </p>
+  
+           <div class="div_answer">
+             
+             {answer}
+             
+           </div>
+           </div>
+         </div>
+      </div>
+   </body>
+</html>

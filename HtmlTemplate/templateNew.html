@@ -1,7 +1,8 @@
-﻿<html>
+<html>
    <head>
       <meta content="text/html; charset=UTF-8" http-equiv="content-type">
       <meta charset="UTF-8">
+	  <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'> 
       <style>
          body
          {
@@ -59,28 +60,142 @@
          color: #1155cc;
          text-decoration: underline;
          font-style: italic;
-         font-size:19px;
+         font-size:18px;
          }
          .div_answer {
          font-size: 24px;
          color: red;
          text-wrap: normal;
          width: 520px;
-         height: 100%;
+         <!-- height: 100%; -->
          overflow-wrap: normal;
          display: block;
          margin: auto;
          vertical-align:middle;
-          padding-top:20px;
+         padding-top:20px;
+		 padding-bottom:80px; 
          }
+          .div_thank {
+         font-size:18px;
+         text-decoration: underline;
+         font-weight:normal;
+         color: black;
+         text-wrap: normal;
+         display: block;
+         margin: auto;
+         }
+         .div_pay_green
+         {
+           color:#38761D;
+           font-size:19px;
+           font-weight:normal;
+           margin: auto;
+           font-weight:bold;
+           margin-top:20px;
+           margin-bottom: 8px;
+         }
+		 
+		 .div_pay_link
+		 {
+		  margin:auto;
+		 }
+		 
+        
+         .div_pay_card
+         {
+           font-size:19px;
+           line-height:115%;
+           color:black;
+           margin:auto;
+           font-weight:700;
+		   margin-bottom:20px;
+         }
+         .div_author
+         {
+           font-family: Merriweather;
+           font-style: italic;
+		   font-weight: 500;
+           font-size:16px;
+		   margin-bottom:10px;
+         }
+          .div_author_name
+         {
+           font-family: Merriweather;
+           font-style:normal;
+		   font-weight: 500;
+           font-size:16px;
+           padding-bottom:20px;
+         }
+         .div_email
+         {
+           font-family: Merriweather;
+           font-style:normal;
+           font-size:16px;
+		   font-weight:500;
+		   padding-bottom: 40px;
+         }
+          .div_email a
+         {
+               
+     font-size: 18px;
+    line-height: 115%;
+    color: #1155CC;
+  
+    font-style:normal;
+    font-weight: 700;
+    font-family: Merriweather;
+           
+         }
+		 
+		  .div_pay_link a
+         {
+   font-size: 18px;
+    line-height: 115%;
+    color: #1155CC;
+  
+    font-style:normal;
+    font-weight: 700;
+    font-family: Merriweather;
+         
+         }
+        div_pay_link {
+         font-size: 16px;
+         line-height: 115%;
+         color: #1155CC;
+         margin: auto;
+         font-weight: 600px;
+         font-weight: 600;
+         font-family: Arial;
+        }
+         .div_fb_link
+         {
+           
+           text-align:center;
+           
+          
+           color:#1155CC;
+           background:white;
+           margin:auto;
+           display:block;
+           padding-bottom: 40px;
+           font-weight:700;
+         }
+    
+		 .div_fb_link a
+          {
+            font-style:normal;
+			font-size:28px;
+			 line-height:115%;
+          }
          .p_answer
          {
          padding-top:45px;
          font-size:23px;
          }
-         .p_number
+         .div_number
          {
-         margin-bottom: 10px;
+         margin-top: 30px;
+		 margin-bottom: 10px;
          }
          .p_label
          {
@@ -93,6 +208,10 @@
          font-size:20px;
          display:block;
          text-align:center;
+         }
+         .div_header .div_number
+         {
+           margin-bottom: 10px;
          }
         ul ,ol { 
 	      display: inline-block; 
@@ -107,38 +226,75 @@
          
         width:85%;
 	}
-
-      </style>
+  
+	</style>
    </head>
    <body>
-      <div class="container">
-         <div class="data">
-            <p class="p_header">
-               <span class="image-header">Home Schooling</span>
-               <!--padding:71.2pt 222pt 420.8pt 221.2pt;-->
-               <span class="image-box">
+    <div class="container">
+         <div class="data">      
+           <div class="div_fb_link">
+           <a href="https://www.facebook.com/groups/intellectual.games.ml">
+             ИНСАЙТ <br/>
+             интеллектуальные игры <br/>
+             для всей семьи
+             </a>
+          </div>
+            <div class="div_header">
+             <span class="image-box">
                <img alt="" src="{src}" class="image1" title="">
+			   <!--<img src="D:\BuildAnswers\images\image1.png" class="image1">-->
                </span>
                <br/>
-               <span class="link"><a href="https://www.patreon.com/user?u=38344195">к заданиям</a></span>
-            </p>
-            <p class="p_number">
+              <!-- <span class="link">
+               <a href="https://www.patreon.com/user?u=38344195">к заданиям</a>
+               </span> -->
+               
+            </div>
+          
+            <div class="div_number">
                <span>
                ({number})
                </span>
-            </p>
-            <p class="p_label">
+            </div>
+            <div class="p_label">
                <span class="c_label">
                Правильный ответ 
                </span>
-            </p>
+            </div>
   
            <div class="div_answer">
              
              {answer}
              
            </div>
+                              
+           <div class="div_thank">
+           Буду благодарна за поддержку ресурса
            </div>
+           
+           <div class="div_pay_green">
+           PayPal           
+           </div>
+           <div class="div_pay_link">
+           <a href="https://www.paypal.com/cgi-bin/webscr?business=homme.et.univers@gmail.com&cmd=_xclick&item_name=homme.et.univers@gmail.com">homme.et.univers@gmail.com</a>
+           </div>
+           <div class="div_pay_green">
+           Карта Сбербанка
+           </div>
+           <div class="div_pay_card">
+           5469 3800 1458 5250
+           </div>
+           <div class="div_author">
+           Автор и ведущий проекта
+           </div>
+           <div class="div_author_name">
+           Мария Лиокумович
+           </div>
+           <div class="div_email">
+           Адрес для связи:
+           <a href="mailto:homme.et.univers@gmail.com">homme.et.univers@gmail.com</a>
+           </div>
+         
          </div>
       </div>
    </body>

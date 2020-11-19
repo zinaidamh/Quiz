@@ -791,6 +791,8 @@ namespace Quiz
             try
             {
                 System.IO.File.Copy(liteDBPath, liteDBPath + DateTime.Now.ToString());
+                //FileSystemInfo fileInfo = new DirectoryInfo(directoryPath).GetFileSystemInfos()
+                //.OrderBy(fi => fi.CreationTime).First();
             }
             catch
             {
